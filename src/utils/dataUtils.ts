@@ -1,6 +1,5 @@
 import { CompanyData, MonthlyAverageData } from "../types/types";
 
-
 export function getMonthlyAverageData(
   data: CompanyData[],
   companyName: string
@@ -22,7 +21,8 @@ export function getMonthlyAverageData(
         google: companyName === "google" ? 1 : 0,
         year,
         month,
-        totalPrice: (current.highestPriceOfTheDay + current.lowestPriceOfTheDay) / 2,
+        totalPrice:
+          (current.highestPriceOfTheDay + current.lowestPriceOfTheDay) / 2,
         count: 1,
       });
     }

@@ -1,5 +1,14 @@
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { MonthlyAveragePrice } from '../types/types';
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
+import { MonthlyAveragePrice } from "../types/types";
 
 type Props = {
   data: MonthlyAveragePrice[];
@@ -17,8 +26,8 @@ export default function StockChart({ data }: Props) {
         <YAxis />
         <Tooltip />
         <Legend />
-        <Line type="monotone" dataKey="google" stroke="#8884d8" name="Google" />
-        <Line type="monotone" dataKey="amazon" stroke="#82ca9d" name="Amazon" />
+        <Line type="monotone" dataKey="google" stroke="#4e276f" name="Google" />
+        <Line type="monotone" dataKey="amazon" stroke="#9cc95c" name="Amazon" />
       </LineChart>
     </ResponsiveContainer>
   );
