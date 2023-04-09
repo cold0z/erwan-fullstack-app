@@ -22,8 +22,8 @@ export default function HomePage({ googleData, amazonData }: Props) {
   );
 
   return (
-    <div>
-      <h1>Prix moyens mensuels des actions Google et Amazon</h1>
+    <div className="m-6">
+      <h1 className="text-lg text-orange-600 mb-10 content-centre">Prix moyens mensuels des actions Google et Amazon</h1>
       <StockChart data={combinedMonthlyAveragePrices} />
     </div>
   );
