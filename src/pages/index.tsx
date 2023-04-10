@@ -19,9 +19,9 @@ export default function HomePage({ googleData, amazonData }: Props) {
     "amazon"
   );
 
-  const combinedMonthlyAveragePrices = googleMonthlyAveragePrices.map(
+  const combinedMonthlyAveragePrices  = googleMonthlyAveragePrices.map(
     (item, index) => ({
-      month: item.month,
+      month: item.month.toString(),
       google: item.totalPrice / item.count,
       amazon:
         amazonMonthlyAveragePrices[index].totalPrice /
