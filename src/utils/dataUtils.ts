@@ -53,6 +53,7 @@ export function findBestTimeToBuySell(data: StockData[]): BuySellDates {
   };
 }
 
+
 export function getMonthlyAverageData(
   data: CompanyData[],
   companyName: string

@@ -10,20 +10,30 @@ type Props = {
 };
 
 export default function HomePage({ googleData, amazonData }: Props) {
-  const googleMonthlyAveragePrices = getMonthlyAverageData(googleData, "google");
-  const amazonMonthlyAveragePrices = getMonthlyAverageData(amazonData, "amazon");
+  const googleMonthlyAveragePrices = getMonthlyAverageData(
+    googleData,
+    "google"
+  );
+  const amazonMonthlyAveragePrices = getMonthlyAverageData(
+    amazonData,
+    "amazon"
+  );
 
   const combinedMonthlyAveragePrices = googleMonthlyAveragePrices.map(
     (item, index) => ({
       month: item.month,
       google: item.totalPrice / item.count,
-      amazon: amazonMonthlyAveragePrices[index].totalPrice / amazonMonthlyAveragePrices[index].count,
+      amazon:
+        amazonMonthlyAveragePrices[index].totalPrice /
+        amazonMonthlyAveragePrices[index].count,
     })
   );
 
   return (
     <div className="m-6">
-      <h1 className="text-lg text-orange-600 mb-10 content-centre">Prix moyens mensuels des actions Google et Amazon</h1>
+      <h1 className="text-4xl text-red-600 mb-20 content-centre">
+        Prix moyens mensuels des actions Google et Amazon
+      </h1>
       <StockChart data={combinedMonthlyAveragePrices} />
     </div>
   );
