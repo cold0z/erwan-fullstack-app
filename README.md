@@ -34,7 +34,7 @@ Installer les dépendances
 cd {repository}
 npm install
 
-Exécuter l'application en mode développement
+# Exécuter l'application en mode développement
 
 npm run dev
 L'application peut également être déployée sur une plateforme de votre choix.
