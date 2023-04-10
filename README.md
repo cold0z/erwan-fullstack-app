@@ -1,8 +1,8 @@
 # Projet Full-Stack Next.js
-Ce projet a été développé dans le cadre d'un test technique pour un poste de développeur Full-Stack. L'objectif était de réaliser un outil permettant de visualiser les cours des actions Google et Amazon sur une année, ainsi que de proposer des stratégies d'achat et de vente pour optimiser le profit.
+Ce projet a été développé dans le cadre d'un test technique pour un poste de chef de projet Full-Stack. L'objectif était de réaliser un outil permettant de visualiser les cours des actions Google et Amazon sur une année, ainsi que de proposer des stratégies d'achat et de vente pour optimiser le profit.
 
 # Technologies utilisées
-Front-end : Next.js, TypeScript, React, Redux, TailwindCSS
+## Front-end : Next.js, TypeScript, React, Redux, TailwindCSS
 Back-end : Express, MongoDB, TypeScript, Jest
 Fonctionnalités
 Visualisation du graphique sur un an du prix des actions
@@ -28,7 +28,7 @@ Le back-end de l'application affiche la liste des actes d’achat ou de vente d�
 Cloner le dépôt Github
 
 
-git clone https://github.com/{username}/{repository}.git
+git clone https://github.com/cold0z/erwan-fullstack-app.git
 Installer les dépendances
 
 cd {repository}
