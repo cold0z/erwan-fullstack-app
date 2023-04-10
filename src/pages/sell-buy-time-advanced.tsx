@@ -1,6 +1,6 @@
 import { GetServerSideProps } from "next";
 import { useState, useEffect } from "react";
-import { CompanyData } from "../types/types";
+import { CompanyData, Transaction } from "../types/types";
 
 type Props = {
   transactions_google: [];
@@ -60,7 +60,7 @@ export default function BestTimeToBuySellDailyPage({
               </tr>
             </thead>
             <tbody>
-              {transactions_google.map((transaction, index) => (
+              {transactions_google.map((transaction: Transaction, index) => (
                 <tr key={index}>
                   <td className="border border-gray-600 p-2">
                     {transaction.action}
@@ -95,7 +95,7 @@ export default function BestTimeToBuySellDailyPage({
               </tr>
             </thead>
             <tbody>
-              {transactions_amazon.map((transaction, index) => (
+              {transactions_amazon.map((transaction: Transaction, index) => (
                 <tr key={index}>
                   <td className="border border-gray-600 p-2">
                     {transaction.action}
