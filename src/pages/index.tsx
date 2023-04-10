@@ -40,10 +40,16 @@ export default function HomePage({ googleData, amazonData }: Props) {
 }
 
 export const getServerSideProps: GetServerSideProps<Props> = async () => {
-  const googleResponse = await fetch("http://localhost:3000/api/stock/GOOGLE");
+
+ const dev = process.env.NODE_ENV !== "production";
+
+ const server = dev ? "http://localhost:3000" : process.env.VERCEL_URL;
+
+
+  const googleResponse = await fetch(`${server}/api/stock/GOOGLE`);
   const googleData = await googleResponse.json();
 
-  const amazonResponse = await fetch("http://localhost:3000/api/stock/AMAZON");
+  const amazonResponse = await fetch(`${server}/api/stock/AMAZON`);
   const amazonData = await amazonResponse.json();
 
   return {
