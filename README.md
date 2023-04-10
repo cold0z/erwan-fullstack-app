@@ -2,7 +2,7 @@
 Ce projet a été développé dans le cadre d'un test technique pour un poste de chef de projet Full-Stack. L'objectif était de réaliser un outil permettant de visualiser les cours des actions Google et Amazon sur une année, ainsi que de proposer des stratégies d'achat et de vente pour optimiser le profit.
 
 # Technologies utilisées
-## Front-end : Next.js, TypeScript, React, Redux, TailwindCSS
+Front-end : Next.js, TypeScript, React, Redux, TailwindCSS
 Back-end : Express, MongoDB, TypeScript, Jest
 Fonctionnalités
 Visualisation du graphique sur un an du prix des actions
