@@ -7,6 +7,7 @@ export type CompanyData = {
   lowestPriceOfTheDay: number;
   timestamp: number;
   n: number;
+  company:string;
 };
 
 export type MonthlyAverageData = {
