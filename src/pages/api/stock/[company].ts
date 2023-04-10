@@ -11,9 +11,6 @@ export default async function handler(
   }
   const client = await MongoClient.connect(process.env.MONGODB_URI as string);
   const db = client.db("stock-data").collection("prices");
-
   const data = await db.find({ company }).toArray();
-  console.log("collection", process.env.MONGODB_URI);
-
   res.json(data);
 }
