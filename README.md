@@ -35,6 +35,10 @@ cd {repository}
 npm install
 
 # Exécuter l'application en mode développement
-
 npm run dev
+
+# Exécuter les testss
+npm run test
+
+
 L'application peut également être déployée sur une plateforme de votre choix.
