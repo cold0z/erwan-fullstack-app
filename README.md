@@ -1,3 +1,7 @@
+👋 Hi, I’m Jihad HADDOU
+👀 Code to see and test
+💞️ looking forward to collaborate
+
 # Projet Full-Stack Next.js
 Ce projet a été développé dans le cadre d'un test technique pour un poste de chef de projet Full-Stack. L'objectif était de réaliser un outil permettant de visualiser les cours des actions Google et Amazon sur une année, ainsi que de proposer des stratégies d'achat et de vente pour optimiser le profit.
 
